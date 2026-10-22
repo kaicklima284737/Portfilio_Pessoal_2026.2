@@ -17,7 +17,7 @@ Certificação em
 Incluir as respectivas chaves de diploma. Disponibilizar um botão para copiar cada chave.
 
 Resultado
-Resolvido totalmente. Os três certificados foram adicionados. As chaves estão visíveis e podem ser copiadas. A seção mantém suporte aos idiomas PT, EN e ES.
+Resolvido parcialmente. Os três certificados foram adicionados. As chaves estão visíveis e podem ser copiadas. A seção mantém suporte aos idiomas PT, EN e ES. Mas não tem imagem e 
 
 Aprendizado
 O prompt inicial deveria especificar cada certificado. Também deveria incluir suas chaves de validação.
