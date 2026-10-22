@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1A0B2E">
+  <meta name="description" content="Portfólio acadêmico de Kaick Lima Silva, estudante de Engenharia de Software.">
+  <title>Kaick Lima Silva | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Cursive:wght@500;700&family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Rubik+Storm&family=Source+Code+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="lock">
+  <div id="intro" role="button" tabindex="0" aria-label="Entrar no portfólio">
+    <canvas id="hole" aria-hidden="true"></canvas>
+    <div class="intro-message">
+      <p id="intro-text">Quer descobrir o que existe além?</p>
+      <small><span data-i="introHint">Pressione Enter ou toque para entrar</span></small>
+    </div>
+  </div>
+
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="logo" href="#inicio" aria-label="Kaick — início">Kaick</a>
+    <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+    <ul id="menu">
+      <li><a href="#inicio" data-i="navHome">Início</a></li>
+      <li><a href="#sobre" data-i="navAbout">Quem sou eu</a></li>
+      <li><a href="#certificacoes" data-i="navCerts">Certificações</a></li>
+      <li><a href="#habilidades" data-i="navSkills">Habilidades</a></li>
+      <li><a href="#projetos" data-i="navProjects">Projetos</a></li>
+      <li><a href="#contato" data-i="navContact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <aside class="social-links" aria-label="Redes sociais">
+    <a href="https://www.linkedin.com/in/kaick-lima" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M5.2 3.4a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9h3.8v12H3.3Zm6.2 0h3.6v1.6h.1a4 4 0 0 1 3.6-2c3.9 0 4.6 2.5 4.6 5.7V21h-3.8v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9.5Z" />
+      </svg>
+    </a>
+    <a href="https://github.com/kaicklima284737" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2V22c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z" />
+      </svg>
+    </a>
+    <a href="mailto:kaicklimatech@gmail.com" aria-label="E-mail">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 4.8h20v14.4H2Zm2 2v.7l8 5.1 8-5.1v-.7Zm16 3.1-8 5-8-5v7.3h16Z" />
+      </svg>
+    </a>
+  </aside>
+
+  <div class="language-switch" aria-label="Selecionar idioma">
+    <button type="button" class="active" data-lang="pt" aria-pressed="true">Português (Brasil)</button>
+    <button type="button" data-lang="en" aria-pressed="false">English (US)</button>
+    <button type="button" data-lang="es" aria-pressed="false">Español</button>
+  </div>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-panel">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i="heroTag">Engenharia de Software · 2º semestre</p>
+            <h1>Kaick Lima Silva</h1>
+            <p id="typewriter" aria-live="polite">Código, curiosidade e novas possibilidades.</p>
+          </div>
+          <div class="hero-photo-wrap" aria-label="Foto de Kaick Lima Silva">
+            <img src="./img/foto.jpeg" alt="Kaick Lima Silva" class="hero-photo" />
+          </div>
+        </div>
+        <span class="decorative-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <a class="scroll-hint" href="#sobre" data-i="scrollHint">Role para explorar ↓</a>
+    </section>
+
+    <section id="sobre" class="about-section section">
+      <div class="section-inner">
+        <p class="eyebrow rv" data-i="aboutEyebrow">Além do primeiro olhar</p>
+        <h2 class="rv" data-i="navAbout">Quem sou eu</h2>
+        <div class="summary-panel rv">
+          <h3 data-i="summaryTitle">Breve resumo</h3>
+          <p data-i="summaryText">Sou estudante de Engenharia de Software na FIAP e técnico em Administração pela Etec
+            Zona Leste. Busco minha primeira oportunidade em Tecnologia. Desenvolvo projetos acadêmicos e pessoais com
+            React, JavaScript, HTML, CSS e APIs. Também estudo Python, FastAPI e bancos de dados. Tenho perfil
+            analítico, organização, facilidade de aprendizado e interesse em criar soluções úteis.</p>
+        </div>
+
+        <div class="career-heading rv">
+          <p class="eyebrow" data-i="careerEyebrow">Minha trajetória</p>
+          <h3 data-i="careerTitle">Career Path</h3>
+          <p data-i="careerIntro">Uma jornada acadêmica em construção, etapa por etapa.</p>
+        </div>
+        <div class="career-path">
+          <article class="career-step rv">
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <span class="date-label">FORMAÇÃO · <span data-i="stageOneDate">2025 — 2029</span></span>
+              <h4 data-i="stageOneTitle">Engenharia de Software · FIAP</h4>
+              <p data-i="stageOneText">Bacharelado em andamento, com previsão de conclusão em dezembro de 2029. Formação
+                voltada ao desenvolvimento de software e à construção de soluções tecnológicas.</p>
+            </div>
+          </article>
+          <article class="career-step rv">
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <span class="date-label">FORMAÇÃO · <span data-i="stageTwoDate">Concluído em 2025</span></span>
+              <h4 data-i="stageTwoTitle">Técnico em Administração · Etec</h4>
+              <p data-i="stageTwoText">Curso técnico concluído em junho de 2025, com conhecimentos de organização de
+                processos, rotinas de escritório, fluxos de trabalho e noções de finanças básicas.</p>
+            </div>
+          </article>
+          <article class="career-step rv">
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <span class="date-label">FORMAÇÃO · <span data-i="stageThreeDate">Concluído em dezembro de
+                  2025</span></span>
+              <h4 data-i="stageThreeTitle">Ensino Médio · E. E. Reverendo Irineu Monteiro de Pinho</h4>
+              <p data-i="stageThreeText">Ensino Médio concluído em dezembro de 2025, etapa que integra a trajetória
+                acadêmica antes da formação superior.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificacoes" class="section">
+      <div class="section-inner narrow">
+        <p class="eyebrow rv" data-i="certEyebrow">Certificados a adicionar</p>
+        <h2 class="rv" data-i="navCerts">Certificações</h2>
+
+        <div class="cert-toolbar">
+          <a class="button validate-cert-btn" href="https://on.fiap.com.br/validar-certificado/" target="_blank"
+            rel="noopener noreferrer">Validar Certificado Fiap</a>
+        </div>
+
+        <div class="cert-list">
+          <article class="content-card cert-card rv">
+            <a class="cert-preview" href="./img/design-thiking%20process.pdf" target="_blank" rel="noopener noreferrer"
+              aria-label="Abrir Design Thinking - Process em nova aba">
+              <div class="cert-preview-overlay">
+                <span class="cert-preview-link">Abrir em nova aba</span>
+              </div>
+            </a>
+
+            <div class="cert-meta">
+              <span class="date-label">CERTIFICAÇÃO · FIAP</span>
+              <h3>Design Thinking - Process</h3>
+              <div class="cert-key">
+                <img src="https://on.fiap.com.br/svgs/certificates/certificate-key.svg" alt="Chave do diploma" />
+                <span>Chave do diploma: 6765e65d84d0db9e71a0f11dcfc0c1fe</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card cert-card rv">
+            <a class="cert-preview" href="./img/Forma%C3%A7%C3%A3o%20Social%20e%20Sustentabilidade.pdf" target="_blank"
+              rel="noopener noreferrer" aria-label="Abrir Formação Social e Sustentabilidade em nova aba">
+              <div class="cert-preview-overlay">
+                <span class="cert-preview-link">Abrir em nova aba</span>
+              </div>
+            </a>
+
+            <div class="cert-meta">
+              <span class="date-label">CERTIFICAÇÃO · FIAP</span>
+              <h3>Formação Social e Sustentabilidade</h3>
+              <div class="cert-key">
+                <img src="https://on.fiap.com.br/svgs/certificates/certificate-key.svg" alt="Chave do diploma" />
+                <span>Chave do diploma: aed38fbab9a04adfb75b4c13a4a2a97e</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card cert-card rv">
+            <a class="cert-preview" href="./img/Pyhton.pdf" target="_blank" rel="noopener noreferrer"
+              aria-label="Abrir Python em nova aba">
+              <div class="cert-preview-overlay">
+                <span class="cert-preview-link">Abrir em nova aba</span>
+              </div>
+            </a>
+
+            <div class="cert-meta">
+              <span class="date-label">CERTIFICAÇÃO · FIAP</span>
+              <h3>Certificação em Python</h3>
+              <div class="cert-key">
+                <img src="https://on.fiap.com.br/svgs/certificates/certificate-key.svg" alt="Chave do diploma" />
+                <span>Chave do diploma: 76a0ae9cbafc04984c7d777ea72dd2e0</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section skills-section">
+      <div class="section-inner">
+        <p class="eyebrow rv" data-i="skillsEyebrow">Ferramentas e conhecimentos</p>
+        <h2 class="rv" data-i="navSkills">Habilidades</h2>
+        <p class="section-intro rv" data-i="skillsIntro">Competências listadas no currículo. Os níveis numéricos não
+          foram estimados, pois o documento não informa percentuais de domínio.</p>
+        <div class="skills-grid">
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-web" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <path d="M14 16.5 8 24l6 7.5M34 16.5 40 24l-6 7.5M27.5 12l-7 24" />
+                <rect x="7" y="10" width="34" height="28" rx="5" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>HTML5 · CSS · JavaScript</h3><span>Projetos</span>
+            </div>
+            <p>Aplicados no desenvolvimento de interfaces web.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-react" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <circle cx="24" cy="24" r="12" />
+                <path
+                  d="M24 8v8M24 32v8M8 24h8M32 24h8M13.5 13.5l5.7 5.7M28.8 28.8l5.7 5.7M34.5 13.5l-5.7 5.7M19.2 28.8l-5.7 5.7" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>React</h3><span>Projeto concluído</span>
+            </div>
+            <p>Componentização, listas, useEffect e Promises.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-api" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <rect x="7" y="13" width="34" height="22" rx="4" />
+                <path d="M7 19h34M16 31l4-8 5 6 5-12 5 14" />
+                <circle cx="16" cy="31" r="2" />
+                <circle cx="21" cy="23" r="2" />
+                <circle cx="27" cy="29" r="2" />
+                <circle cx="33" cy="17" r="2" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>Consumo e integração de APIs</h3><span>Prática</span>
+            </div>
+            <p>Integração com a API TMDB na aplicação de filmes.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-python" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <path
+                  d="M9 17.5c0-2.5 2-4.5 4.5-4.5h21c2.5 0 4.5 2 4.5 4.5v13c0 2.5-2 4.5-4.5 4.5h-21c-2.5 0-4.5-2-4.5-4.5v-13Z" />
+                <path d="M17 24h14M17 18h14M17 30h10" />
+                <path d="M32 13v-3h4v3M12 13v-3h4v3" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>Python · FastAPI</h3><span>Conhecimentos</span>
+            </div>
+            <p>Python aplicado à lógica de uma simulação de e-commerce.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-db" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <ellipse cx="24" cy="16" rx="12" ry="6" />
+                <path d="M12 16v16c0 3.3 5.4 6 12 6s12-2.7 12-6V16" />
+                <path d="M12 24v16c0 3.3 5.4 6 12 6s12-2.7 12-6V24" />
+                <path d="M16 16v16M24 13v20M32 16v16" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>SQL · MongoDB</h3><span>Conhecimentos</span>
+            </div>
+            <p>SQL utilizado em projeto para organização de dados.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-git" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <path d="M19 13v9m0 0-5 5m5-5h10m0 0 5 5m-5-5V13" />
+                <circle cx="15" cy="31" r="5" />
+                <circle cx="33" cy="31" r="5" />
+                <circle cx="24" cy="10" r="5" />
+                <path d="M18 28.5 22 23l2 3 6-7" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>Git · GitHub · Vercel</h3><span>Ferramentas</span>
+            </div>
+            <p>Versionamento, repositórios e deploy.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-ux" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <rect x="10" y="11" width="28" height="26" rx="4" />
+                <path d="M16 18h16M16 24h16M16 30h9" />
+                <circle cx="32" cy="30" r="5" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>UX · UI · Scrum</h3><span>Projeto acadêmico</span>
+            </div>
+            <p>Levantamento de dados, brainstorming, backlog e prototipação.</p>
+          </article>
+          <article class="content-card skill-card rv">
+            <div class="skill-placeholder" aria-hidden="true">
+              <svg class="skill-icon skill-icon-office" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                <rect x="9" y="12" width="30" height="24" rx="4" />
+                <path d="M15 19h18M15 24h18M15 29h12" />
+                <path d="M29 12v24" />
+              </svg>
+            </div>
+            <div class="skill-heading">
+              <h3>Excel · Word · PowerPoint</h3><span>Intermediário</span>
+            </div>
+            <p>Microsoft Office em nível intermediário; também Google Workspace.</p>
+          </article>
+        </div>
+        <p class="language-note rv"><strong>Idiomas:</strong> Inglês básico (A2), em curso.</p>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section-inner">
+        <p class="eyebrow rv" data-i="projectsEyebrow">Explorações em destaque</p>
+        <h2 class="rv" data-i="projectsTitle">Projetos em destaque</h2>
+        <p class="section-intro rv" data-i="projectsIntro">Projetos destacados no meu perfil do GitHub, com informações
+          consultadas diretamente nos repositórios.</p>
+        <div class="github-repos-wrap">
+          <p id="github-status" class="section-intro">Carregando projetos destacados do GitHub…</p>
+          <div id="github-repositories" class="projects-grid" aria-live="polite"></div>
+          <p class="github-profile-link"><a class="text-link" href="https://github.com/kaicklima284737" target="_blank"
+              rel="noopener noreferrer">Ver perfil completo no GitHub ↗</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="section-inner contact-inner">
+        <p class="eyebrow rv" data-i="contactEyebrow">Vamos conversar</p>
+        <h2 class="rv" data-i="navContact">Contato</h2>
+        <p class="contact-copy rv" data-i="contactIntro">Aberto a conexões, aprendizado e oportunidades futuras.</p>
+        <div class="contact-list rv">
+          <a href="https://www.linkedin.com/in/kaick-lima" target="_blank"
+            rel="noopener noreferrer"><span>LinkedIn</span><span>linkedin.com/in/kaick-lima ↗</span></a>
+          <a href="https://github.com/kaicklima284737" target="_blank"
+            rel="noopener noreferrer"><span>GitHub</span><span>github.com/kaicklima284737 ↗</span></a>
+          <a href="mailto:kaicklimatech@gmail.com"><span>E-mail</span><span>kaicklimatech@gmail.com ↗</span></a>
+          <a href="tel:+5511988781904"><span data-i="phone">Telefone</span><span>(11) 98878-1904 ↗</span></a>
+        </div>
+        <a class="button resume-button rv" href="./docs/Curriculo_Kaick_Lima_Silva.pdf" download data-i="resume">Baixar
+          currículo ↓</a>
+        <p class="small-note rv" data-i="resumeNote">Currículo em PDF disponível para download.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="cert-modal" class="cert-modal" aria-hidden="true">
+    <div class="cert-modal-backdrop" data-close-modal="true"></div>
+    <div class="cert-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <button class="cert-modal-close" type="button" aria-label="Fechar visualização do certificado">×</button>
+      <div class="cert-modal-header">
+        <h3 id="cert-modal-title">Certificado</h3>
+      </div>
+      <div class="cert-modal-fallback" hidden>
+        <p>Seu navegador não renderizou o PDF inline. Use a opção abaixo para abrir o documento em outra aba.</p>
+        <a id="cert-modal-link" class="button" href="#" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+      </div>
+      <iframe id="cert-modal-frame" title="Visualização do certificado" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <footer><span>© <span id="year">2026</span> Kaick Lima Silva</span><span data-i="footerText">Feito com curiosidade e
+      propósito.</span></footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
