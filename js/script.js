@@ -199,19 +199,40 @@
   });
 
   const revealElements = $$(".rv");
-  if ("IntersectionObserver" in window && !reducedMotion) {
-    const revealObserver = new IntersectionObserver(entries => {
+  let revealObserver = null;
+
+  function setupRevealObserver() {
+    if (!("IntersectionObserver" in window) || reducedMotion) {
+      revealElements.forEach(element => element.classList.add("in"));
+      return;
+    }
+
+    revealObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (!entry.isIntersecting) return;
+        const delay = Number.parseInt(entry.target.style.getPropertyValue("--reveal-delay"), 10) || 0;
+        entry.target.style.transitionDelay = `${delay}ms`;
+        requestAnimationFrame(() => {
           entry.target.classList.add("in");
-          revealObserver.unobserve(entry.target);
-        }
+        });
+        revealObserver.unobserve(entry.target);
       });
-    }, { threshold: 0.25 });
-    revealElements.forEach(element => revealObserver.observe(element));
-  } else {
-    revealElements.forEach(element => element.classList.add("in"));
+    }, {
+      threshold: 0.12,
+      rootMargin: "0px 0px -8% 0px"
+    });
+
+    revealElements.forEach((element, index) => {
+      const isHeroPhoto = element.classList.contains("hero-photo-wrap");
+      const isSocialLink = element.classList.contains("social-link");
+      const isContactEntry = element.closest(".contact-list");
+      const delay = isHeroPhoto ? 120 : isSocialLink ? 260 + (index * 120) : isContactEntry ? 0 : 180 + (index * 100);
+      element.style.setProperty("--reveal-delay", `${delay}ms`);
+      revealObserver.observe(element);
+    });
   }
+
+  setupRevealObserver();
 
   $("#year").textContent = new Date().getFullYear();
 
@@ -230,6 +251,7 @@
   const holeContext = holeCanvas.getContext("2d", { alpha: false });
   let holeWidth = 0, holeHeight = 0, holeDpr = 1;
   let introStarted = false, introFinished = false, animationFrame = 0, introStartTime = 0;
+  const introDuration = 2200;
   const blackHoleParticles = [];
   const particleCount = isSmallDevice ? 65 : 135;
 
@@ -260,7 +282,7 @@
     if (introFinished) return;
     const cx = holeWidth / 2, cy = holeHeight / 2;
     const unit = Math.min(holeWidth, holeHeight);
-    const progress = introStarted ? Math.min((time - introStartTime) / 1550, 1) : 0;
+    const progress = introStarted ? Math.min((time - introStartTime) / introDuration, 1) : 0;
     let scale = 1;
     if (introStarted) scale = progress < 0.45 ? 1 - (progress / 0.45) * 0.82 : 0.18 + ((progress - 0.45) / 0.55) * 7.5;
 
@@ -302,6 +324,10 @@
       finishIntro();
       return;
     }
+    if (introStarted && time - introStartTime >= introDuration) {
+      finishIntro();
+      return;
+    }
     animationFrame = window.requestAnimationFrame(drawBlackHole);
   }
 
@@ -310,12 +336,13 @@
     introStarted = true;
     introStartTime = performance.now();
     intro.classList.add("go");
-    if (reducedMotion) {
-      finishIntro();
-      return;
-    }
     if (animationFrame) cancelAnimationFrame(animationFrame);
     animationFrame = requestAnimationFrame(drawBlackHole);
+    window.setTimeout(() => {
+      if (!introFinished) {
+        finishIntro();
+      }
+    }, introDuration + 300);
   }
 
   function finishIntro() {
@@ -329,14 +356,20 @@
       document.body.classList.remove("lock");
       holeCanvas.width = 0;
       startParticleNetwork();
-    }, reducedMotion ? 0 : 760);
+    }, 760);
   }
 
-  intro.addEventListener("pointerdown", startIntro);
+  intro.addEventListener("pointerdown", () => {
+    if (!introStarted && !introFinished) {
+      startIntro();
+    }
+  });
   intro.addEventListener("keydown", event => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
-      startIntro();
+      if (!introStarted && !introFinished) {
+        startIntro();
+      }
     }
   });
   window.addEventListener("keydown", event => {
@@ -345,17 +378,26 @@
     }
   });
 
-  resizeHole();
-  seedBlackHoleParticles();
-  window.addEventListener("resize", () => {
+  const hasSeenPortfolioSession = sessionStorage.getItem("portfolioIntroSeen") === "true";
+
+  if (!hasSeenPortfolioSession) {
+    sessionStorage.setItem("portfolioIntroSeen", "true");
     resizeHole();
     seedBlackHoleParticles();
-  });
+    window.addEventListener("resize", () => {
+      resizeHole();
+      seedBlackHoleParticles();
+    });
 
-  if (reducedMotion) {
-    finishIntro();
+    window.setTimeout(() => {
+      startIntro();
+    }, 220);
   } else {
-    animationFrame = requestAnimationFrame(drawBlackHole);
+    document.body.classList.remove("lock");
+    if (intro) {
+      intro.remove();
+    }
+    startParticleNetwork();
   }
   runTypewriter();
 
@@ -496,6 +538,11 @@
         body.append(language, title, description, details, link);
         card.append(art, body);
         grid.append(card);
+        if (revealObserver) {
+          card.style.setProperty("--reveal-delay", `${(index + 1) * 110}ms`);
+          revealObserver.observe(card);
+          return;
+        }
         if ("IntersectionObserver" in window && !reducedMotion) {
           requestAnimationFrame(() => card.classList.add("in"));
         } else {
