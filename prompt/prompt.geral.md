@@ -39,14 +39,14 @@ Problema
 Os elementos não estão aparecendo ou desaparecendo conforme esperado. Também é necessário controlar quando a animação inicial será executada.
 
 Prompt de correção
-Nada está sumindo ou aparecendo. Priorize o carregamento do local que contenha a foto.jpg. depois priorize o carregamento do Nav com as seções, depois os icones do linkedin e github e depois o restante do portifolio. Álem disso, faça com que a animação carregue apenas no 1 login a página, onde se reiniciar com uso do reload não funcione novamente, mas se entrar novamente com o clique do link ou conexão direta com o link a animação volte a funcionar
+Nada está sumindo ou aparecendo. Priorize o carregamento do local que contenha a foto.jpeg. depois priorize o carregamento do Nav com as seções, depois os icones do linkedin e github e depois o restante do portifolio. Álem disso, faça com que a animação carregue apenas no 1 login a página, onde se reiniciar com uso do reload não funcione novamente, mas se entrar novamente com o clique do link ou conexão direta com o link a animação volte a funcionar
 
 Resultado
 
 Status: não solucionado.
 
 A sequência esperada erá:
-1. Caixa contendo foto.jpg.
+1. Caixa contendo foto.jpeg.
 2. Navegação com as seções.
 3. Ícones do LinkedIn e GitHub.
 4. Demais elementos do portfólio.

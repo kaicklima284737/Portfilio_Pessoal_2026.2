@@ -639,114 +639,34 @@ h3 {
 }
 
 .cert-key span {
+  flex: 1;
   color: var(--pale);
   font: 600 .7rem var(--font-code);
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
 
-.cert-modal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  z-index: 200;
-}
-
-.cert-modal.open {
-  display: block;
-}
-
-.cert-modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(7, 2, 15, 0.8);
-  backdrop-filter: blur(6px);
-}
-
-.cert-modal-dialog {
-  position: relative;
-  z-index: 1;
-  width: min(92vw, 1100px);
-  height: min(88vh, 900px);
-  margin: 6vh auto 0;
-  padding: 1rem 1rem 0;
+.copy-cert-key {
+  flex-shrink: 0;
+  padding: .45rem .7rem;
   border: 1px solid var(--line);
-  border-radius: 18px;
-  background: #12081f;
-  box-shadow: 0 20px 60px rgba(7, 2, 15, 0.7);
-}
-
-.cert-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0 2.4rem 0.8rem 0.5rem;
-}
-
-.cert-modal-header h3 {
-  margin: 0;
-  color: var(--pale);
-  font-size: 1.1rem;
-}
-
-.cert-modal-close {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  background: rgba(173, 131, 229, 0.12);
   color: var(--text);
-  font-size: 1.4rem;
+  font: 600 .66rem var(--font-code);
   cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
 }
 
-#cert-modal-frame {
-  width: 100%;
-  height: calc(100% - 3.5rem);
-  border: 0;
-  border-radius: 12px;
-  background: #fff;
+.copy-cert-key:hover,
+.copy-cert-key:focus-visible {
+  background: rgba(173, 131, 229, 0.22);
+  transform: translateY(-1px);
 }
 
-.cert-modal-fallback {
-  display: grid;
-  place-items: center;
-  gap: 1rem;
-  min-height: calc(100% - 3.5rem);
-  padding: 2rem;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.02);
-  color: var(--muted);
-  text-align: center;
-}
-
-.cert-modal-fallback p {
-  max-width: 36rem;
-  margin: 0;
-  line-height: 1.7;
-}
-
-@media (max-width: 640px) {
-  .cert-modal-dialog {
-    width: min(96vw, 1100px);
-    height: min(82vh, 700px);
-    margin-top: 9vh;
-    padding: 0.65rem 0.65rem 0;
-  }
-
-  .cert-modal-header {
-    padding-right: 2.2rem;
-  }
-
-  .cert-modal-close {
-    top: 0.6rem;
-    right: 0.6rem;
-  }
+.copy-cert-key.copied {
+  background: rgba(87, 214, 148, 0.22);
+  border-color: rgba(87, 214, 148, 0.7);
 }
 
 .button {
@@ -799,8 +719,10 @@ h3 {
 }
 
 .skill-placeholder {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
   width: 54px;
   height: 54px;
   margin-bottom: 1.1rem;
@@ -811,54 +733,16 @@ h3 {
   box-shadow: inset 0 0 0 1px rgba(173, 131, 229, 0.08);
 }
 
-.skill-placeholder svg {
-  width: 28px;
-  height: 28px;
-  fill: var(--icon-fill, none);
-  stroke: var(--icon-stroke, currentColor);
-  stroke-width: 2.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.skill-logo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(173, 131, 229, 0.24));
 }
 
-.skill-icon-web {
-  --icon-fill: rgba(227, 79, 38, 0.14);
-  --icon-stroke: #e34f26;
-}
-
-.skill-icon-react {
-  --icon-fill: rgba(97, 218, 251, 0.16);
-  --icon-stroke: #61dafb;
-}
-
-.skill-icon-api {
-  --icon-fill: rgba(23, 126, 251, 0.14);
-  --icon-stroke: #177efb;
-}
-
-.skill-icon-python {
-  --icon-fill: rgba(55, 118, 171, 0.14);
-  --icon-stroke: #3776ab;
-}
-
-.skill-icon-db {
-  --icon-fill: rgba(0, 173, 91, 0.14);
-  --icon-stroke: #00ad5b;
-}
-
-.skill-icon-git {
-  --icon-fill: rgba(240, 80, 50, 0.12);
-  --icon-stroke: #f05032;
-}
-
-.skill-icon-ux {
-  --icon-fill: rgba(99, 102, 241, 0.14);
-  --icon-stroke: #6366f1;
-}
-
-.skill-icon-office {
-  --icon-fill: rgba(16, 124, 72, 0.14);
-  --icon-stroke: #107c48;
+.skill-logo-small {
+  width: 18px;
+  height: 18px;
 }
 
 .skill-heading {

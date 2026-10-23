@@ -17,9 +17,9 @@
       stageOneDate: "2025 — 2029", stageOneTitle: "Engenharia de Software · FIAP", stageOneText: "Bacharelado em andamento, com previsão de conclusão em dezembro de 2029.",
       stageTwoDate: "Concluído em 2025", stageTwoTitle: "Técnico em Administração · Etec", stageTwoText: "Curso concluído em junho de 2025, com conhecimentos de organização de processos, rotinas de escritório e fluxos de trabalho.",
       stageThreeDate: "Concluído em dezembro de 2025", stageThreeTitle: "Ensino Médio · E. E. Reverendo Irineu Monteiro de Pinho", stageThreeText: "Ensino Médio concluído em dezembro de 2025, etapa anterior à formação superior.",
-      certEyebrow: "Certificados a adicionar", certPlaceholder: "CERTIFICAÇÃO · NÃO INFORMADA NO CURRÍCULO", certOne: "Nenhuma certificação informada", certTwo: "Nenhuma certificação informada", certThree: "Nenhuma certificação informada",
+      certEyebrow: "Certificações acadêmicas", certPlaceholder: "CERTIFICAÇÃO · NÃO INFORMADA NO CURRÍCULO", certOne: "Nenhuma certificação informada", certTwo: "Nenhuma certificação informada", certThree: "Nenhuma certificação informada",
       certOneText: "Adicione o certificado quando disponível", certTwoText: "Adicione o certificado quando disponível", certThreeText: "Adicione o certificado quando disponível", download: "Certificado a adicionar ↗",
-      skillsEyebrow: "Ferramentas e conhecimentos", skillsIntro: "Competências listadas no currículo. Os níveis numéricos não foram estimados, pois o documento não informa percentuais de domínio.", levelPlaceholder: "Informação do currículo", skillFour: "Conhecimento a adicionar",
+      skillsEyebrow: "Ferramentas e conhecimentos", skillsIntro: "Aprimorando minhas competências com projetos acadêmicos, práticos e de estudo em desenvolvimento contínuo.", levelPlaceholder: "Informação do currículo", skillFour: "Conhecimento a adicionar",
       projectsEyebrow: "Explorações em destaque", projectsTitle: "Projetos em destaque", projectsIntro: "Projetos destacados no meu perfil do GitHub, com informações consultadas diretamente nos repositórios.", githubReposTitle: "Repositórios públicos do GitHub",
       projectPlaceholder: "PROJETO DO CURRÍCULO", projectOne: "Aplicação Web de Visualização de Filmes", projectTwo: "Projeto de Melhoria de Experiência do Usuário", projectThree: "Simulação de E-commerce de Supermercado",
       projectOneText: "Aplicação inspirada no TV Time, com interface em React e consumo da API TMDB para exibir informações sobre filmes.", projectTwoText: "Projeto acadêmico com FIAP e Jovi / Grupo VIVO, envolvendo pesquisa, brainstorming, backlog, MVP e prototipação UX/UI.", projectThreeText: "Aplicação em Python com identificadores de usuários, histórico de consumo, banco de dados SQL e registro de alterações.", repoLink: "Ver GitHub ↗",
@@ -36,9 +36,9 @@
       stageOneDate: "2025 — 2029", stageOneTitle: "Software Engineering · FIAP", stageOneText: "Bachelor’s degree in progress, expected to be completed in December 2029.",
       stageTwoDate: "Completed in 2025", stageTwoTitle: "Business Administration Technician · Etec", stageTwoText: "Completed in June 2025, covering process organization, office routines, and workflows.",
       stageThreeDate: "Completed in December 2025", stageThreeTitle: "High School · E. E. Reverendo Irineu Monteiro de Pinho", stageThreeText: "High school completed in December 2025, before starting higher education.",
-      certEyebrow: "Certificates to be added", certPlaceholder: "CERTIFICATION · NOT LISTED ON RÉSUMÉ", certOne: "No certification listed", certTwo: "No certification listed", certThree: "No certification listed",
+      certEyebrow: "Academic certifications", certPlaceholder: "CERTIFICATION · NOT LISTED ON RÉSUMÉ", certOne: "No certification listed", certTwo: "No certification listed", certThree: "No certification listed",
       certOneText: "Add the certificate when available", certTwoText: "Add the certificate when available", certThreeText: "Add the certificate when available", download: "Certificate to be added ↗",
-      skillsEyebrow: "Tools and knowledge", skillsIntro: "Skills listed on the résumé. Numeric proficiency levels are not estimated because the document provides no percentages.", levelPlaceholder: "Résumé information", skillFour: "Skill to be added",
+      skillsEyebrow: "Tools and knowledge", skillsIntro: "Strengthening my skills through academic, practical, and study projects in continuous development.", levelPlaceholder: "Résumé information", skillFour: "Skill to be added",
       projectsEyebrow: "Featured work", projectsTitle: "Featured projects", projectsIntro: "Projects featured on my GitHub profile, with information loaded directly from each repository.", githubReposTitle: "Public GitHub repositories",
       projectPlaceholder: "RÉSUMÉ PROJECT", projectOne: "Movie Browsing Web App", projectTwo: "User Experience Improvement Project", projectThree: "Supermarket E-commerce Simulation",
       projectOneText: "A TV Time-inspired app built with React and the TMDB API to display movie information.", projectTwoText: "An academic project with FIAP and Jovi / Grupo VIVO, including research, brainstorming, backlog, MVP, and UX/UI prototyping.", projectThreeText: "A Python app with user identifiers, consumption history, an SQL database, and change logging.", repoLink: "View GitHub ↗",
@@ -55,9 +55,9 @@
       stageOneDate: "2025 — 2029", stageOneTitle: "Ingeniería de Software · FIAP", stageOneText: "Licenciatura en curso, con previsión de finalización en diciembre de 2029.",
       stageTwoDate: "Finalizado en 2025", stageTwoTitle: "Técnico en Administración · Etec", stageTwoText: "Curso finalizado en junio de 2025, con conocimientos de organización de procesos, rutinas de oficina y flujos de trabajo.",
       stageThreeDate: "Finalizado en diciembre de 2025", stageThreeTitle: "Educación secundaria · E. E. Reverendo Irineu Monteiro de Pinho", stageThreeText: "Educación secundaria finalizada en diciembre de 2025, antes de comenzar la formación superior.",
-      certEyebrow: "Certificados por añadir", certPlaceholder: "CERTIFICACIÓN · NO INDICADA EN EL CURRÍCULUM", certOne: "No se indican certificaciones", certTwo: "No se indican certificaciones", certThree: "No se indican certificaciones",
+      certEyebrow: "Certificaciones académicas", certPlaceholder: "CERTIFICACIÓN · NO INDICADA EN EL CURRÍCULUM", certOne: "No se indican certificaciones", certTwo: "No se indican certificaciones", certThree: "No se indican certificaciones",
       certOneText: "Añade el certificado cuando esté disponible", certTwoText: "Añade el certificado cuando esté disponible", certThreeText: "Añade el certificado cuando esté disponible", download: "Certificado por añadir ↗",
-      skillsEyebrow: "Herramientas y conocimientos", skillsIntro: "Competencias indicadas en el currículum. No se estiman porcentajes porque el documento no informa niveles numéricos.", levelPlaceholder: "Información del currículum", skillFour: "Conocimiento por añadir",
+      skillsEyebrow: "Herramientas y conocimientos", skillsIntro: "Fortaleciendo mis habilidades con proyectos académicos, prácticos y de estudio en desarrollo continuo.", levelPlaceholder: "Información del currículum", skillFour: "Conocimiento por añadir",
       projectsEyebrow: "Proyectos destacados", projectsTitle: "Proyectos destacados", projectsIntro: "Proyectos destacados en mi perfil de GitHub, con información consultada directamente en cada repositorio.", githubReposTitle: "Repositorios públicos de GitHub",
       projectPlaceholder: "PROYECTO DEL CURRÍCULUM", projectOne: "Aplicación web de películas", projectTwo: "Proyecto de mejora de experiencia de usuario", projectThree: "Simulación de comercio electrónico de supermercado",
       projectOneText: "Aplicación inspirada en TV Time, creada con React y la API TMDB para mostrar información de películas.", projectTwoText: "Proyecto académico con FIAP y Jovi / Grupo VIVO, con investigación, brainstorming, backlog, MVP y prototipado UX/UI.", projectThreeText: "Aplicación en Python con identificadores de usuarios, historial de consumo, base de datos SQL y registro de cambios.", repoLink: "Ver GitHub ↗",
@@ -136,66 +136,43 @@
     menuToggle.setAttribute("aria-expanded", "false");
   }));
 
-  const certModal = $("#cert-modal");
-  const certModalFrame = $("#cert-modal-frame");
-  const certModalTitle = $("#cert-modal-title");
-  const certModalFallback = $(".cert-modal-fallback");
-  const certModalLink = $("#cert-modal-link");
-  let lastFocusedPreview = null;
+  const writeToClipboard = async (value) => {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(value);
+      return;
+    }
 
-  const closeModal = () => {
-    certModal.classList.remove("open");
-    certModal.setAttribute("aria-hidden", "true");
-    certModalFrame.src = "";
-    certModalFallback.hidden = true;
-    certModalFrame.style.display = "block";
-    document.body.style.overflow = "";
-    if (lastFocusedPreview) lastFocusedPreview.focus();
-    lastFocusedPreview = null;
+    const helper = document.createElement("textarea");
+    helper.value = value;
+    helper.setAttribute("readonly", "");
+    helper.style.position = "fixed";
+    helper.style.top = "-9999px";
+    document.body.appendChild(helper);
+    helper.select();
+    document.execCommand("copy");
+    document.body.removeChild(helper);
   };
 
-  certModalFrame.addEventListener("error", () => {
-    certModalFrame.style.display = "none";
-    certModalFallback.hidden = false;
-  });
+  document.querySelectorAll(".copy-cert-key").forEach(button => {
+    button.addEventListener("click", async () => {
+      const value = button.dataset.copyKey || "";
+      if (!value) return;
 
-  $$(".cert-preview").forEach(preview => {
-    const openModal = () => {
-      lastFocusedPreview = preview;
-      const pdf = preview.dataset.pdf;
-      const title = preview.dataset.title || "Certificado FIAP";
-      certModalTitle.textContent = title;
-      certModalLink.href = pdf;
-      certModalFrame.src = pdf;
-      certModalFrame.style.display = "block";
-      certModalFallback.hidden = true;
-      certModal.classList.add("open");
-      certModal.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-      requestAnimationFrame(() => {
-        $(".cert-modal-close").focus();
-      });
-    };
-
-    preview.addEventListener("click", event => {
-      if (event.target.closest("a")) return;
-      openModal();
-    });
-    preview.addEventListener("keydown", event => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openModal();
+      const previous = button.textContent;
+      try {
+        await writeToClipboard(value);
+        button.textContent = "Copiado";
+        button.classList.add("copied");
+      } catch (error) {
+        button.textContent = "Erro";
+        button.classList.add("copied");
       }
-    });
-  });
 
-  const certModalClose = $(".cert-modal-close");
-  certModalClose.addEventListener("click", closeModal);
-  certModal.addEventListener("click", event => {
-    if (event.target.matches("[data-close-modal='true']")) closeModal();
-  });
-  window.addEventListener("keydown", event => {
-    if (event.key === "Escape" && certModal.classList.contains("open")) closeModal();
+      window.setTimeout(() => {
+        button.textContent = previous;
+        button.classList.remove("copied");
+      }, 1400);
+    });
   });
 
   const revealElements = $$(".rv");

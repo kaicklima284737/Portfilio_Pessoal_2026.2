@@ -2,7 +2,7 @@ Problema
 A aba inicial precisa exibir a foto pessoal ao lado do nome. O design original deve ser preservado.
 
 Prompt de correção
-Adicione o foto.jpg a aba inicial ao lado do nome, mantendo o design da página.
+Adicione o foto.jpeg à aba inicial ao lado do nome, mantendo o design da página.
 
 Resultado
 Status: parcialmente solucionado

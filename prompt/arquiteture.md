@@ -268,7 +268,7 @@ A ordem dos prompts 19 a 23 segue o arquivo `prompt_geral.md`. P2 documenta o pr
 
 **P16** · Hero: foto
 
-> Adicione o foto.jpg a aba inicial ao lado do nome, mantendo o design da página.
+> Adicione o foto.jpeg à aba inicial ao lado do nome, mantendo o design da página.
 
 
 **P17** · Intro: buraco negro
@@ -293,7 +293,7 @@ A ordem dos prompts 19 a 23 segue o arquivo `prompt_geral.md`. P2 documenta o pr
 
 **P21** · Intro: ordem e primeira visita
 
-> Nada está sumindo ou aparecendo. Priorize o carregamento do local que contenha a foto.jpg. depois priorize o carregamento do Nav com as seções, depois os icones do linkedin e github e depois o restante do portifolio. Álem disso, faça com que a animação carregue apenas no 1 login a página, onde se reiniciar com uso do reload não funcione novamente, mas se entrar novamente com o clique do link ou conexão direta com o link a animação volte a funcionar
+> Nada está sumindo ou aparecendo. Priorize o carregamento do local que contenha a foto.jpeg. depois priorize o carregamento do Nav com as seções, depois os icones do linkedin e github e depois o restante do portifolio. Álem disso, faça com que a animação carregue apenas no 1 login a página, onde se reiniciar com uso do reload não funcione novamente, mas se entrar novamente com o clique do link ou conexão direta com o link a animação volte a funcionar
 
 
 **P22** · Scroll reveal e contatos
@@ -546,8 +546,8 @@ Padrões que se repetiram:
 
 ### 3.5 Resultado final
 
-- Repositório: *(preencher: github.com/kaicklima284737/NOME-DO-REPO)*
-- Deploy: *(preencher: link da Vercel)*
+- Repositório: *((https://github.com/kaicklima284737/Portfolio_Pessoal_2026.2))*
+- Deploy: *((https://portfoliopessoal20262.vercel.app))*
 
 #### Reflexão
 

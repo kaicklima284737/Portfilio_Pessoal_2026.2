@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Chave do diploma" role="img">
+  <title>Chave do diploma</title>
+  <g fill="none" stroke="#E0D5ED" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="26" r="12" stroke-width="4" fill="#AD83E5" fill-opacity="0.18"/>
+    <path d="M24 18v16M18 26h12M42 16l8 8-9 9-8-8 9-9Z" stroke-width="4" fill="#AD83E5" fill-opacity="0.2"/>
+    <path d="M30 26h14" stroke-width="3"/>
+  </g>
+</svg>
